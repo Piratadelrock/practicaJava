@@ -191,19 +191,43 @@ Recuerda que esto solo funciona con versiones superiores a Java 10.
     
     ++: i++ es equivalente a i = i + 1.
     --: i-- es equivalente a i = i - 1.
-    Podemos usar estos operadores de forma prefija (++i) o postfija (i++). La diferencia está en qué operación se ejecuta primero:
+    Podemos usar estos operadores de forma prefija (++i) o postfija (i++).
+    La diferencia está en qué operación se ejecuta primero:
     
+    regalando puntos cuando obtiene una vida.
     // Incremento postfijo:
-    int vidas = 5;
-    int regalo = 100 + vidas++;
-    
-    System.out.println("Regalo: " + regalo + ", vidas: " + vidas);
-    // Regalo: 105, vidas: 6
+        int vidas = 5;
+        int regalo = 100 + vidas++;
+        
+        System.out.println("Regalo: " + regalo + ", vidas: " + vidas);
+        // Regalo: 105, vidas: 6
     
     // Incremento prefijo:
-    int vidas = 5;
-    int regalo = 100 + ++vidas;
-    
-    System.out.println("Regalo: " + regalo + ", vidas: " + vidas);
-    // Regalo: 106, vidas: 6
-     
+        int vidas = 5;
+        int regalo = 100 + ++vidas;
+        
+        System.out.println("Regalo: " + regalo + ", vidas: " + vidas);
+        // Regalo: 106, vidas: 6
+# operaciones lado cientifico, clase math 
+    la clase math tiene muchos otros metodos
+    //devuelve un entero redondeo hacia arriba
+        Math.ceil(x) 
+    //devuelve entero redondeo hacia abajo
+        Math.floor(x)
+    //devuelve un numero elevado a otro 
+        Math.pow(x,y) //23
+    //devuelve el numero mayor 
+        Math.max(x,y)
+    //devuelve raíz cuadrada
+        Math.sqrt(y)
+    //Area de un circulo
+    //pi * r2
+        Math.PI * Math.pow(y,2) 
+        imaginando que y es el radio elevado a la segunda potencia y,2
+    //area de una esfera
+    //4*PI*r2
+        4*Math.PI * Math.pow(y,2)
+    //volumen de una esfera
+    //(4/3)*pi*r3
+    (4/3)*Math.PI * Math.pow(y,2)
+# cast en variables estimacion y exactitud
