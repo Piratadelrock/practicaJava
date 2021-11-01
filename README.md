@@ -230,6 +230,27 @@ Recuerda que esto solo funciona con versiones superiores a Java 10.
     //volumen de una esfera
     //(4/3)*pi*r3
     (4/3)*Math.PI * Math.pow(y,2)
+    
+        Math.PI // 3.141592653589793
+        Math.E // 2.718281828459045
+
+        Math.ceil(2.1) // 3.0 (redondear hacia arriba)
+        Math.floar(2.1) // 2.0 (redondear hacia abajo)
+
+        Math.pow(2, 3) // 8.0 (número elevado a una potencia)
+        Math.sqrt(3) // 1.73... (raíz cuadrada)
+
+        Math.max(2, 3) // 3.0 (el número más grande)
+
+        // Área de un círculo (PI * r^2):
+                Math.PI * Math.pow(r, 2)
+
+        // Área de una esfera (4 * PI * r^2):
+                4 * Math.PI * Math.pow(r, 2)
+
+        // Volumen de una esfera ( (4/3) * PI * r^3):
+                (4/3) * Math.PI * Math.pow(r, 3)
+                
 # cast manual en variables estimación y exactitud
     un cast es un tipo de dato que esta siendo transformado a un tipo de dato distinto 
       ejecutar un casting sera colocar (int) para trunca la parte decimal
@@ -405,7 +426,7 @@ Recuerda que esto solo funciona con versiones superiores a Java 10.
             System.out.println("Selecciona una opcion");
     }
     
- #funciones 
+ #FUNCIONES 
     entregamos dato -> realiza proceso-> sale resultado
     organizar y modularizar el código 
     reutilizar codigo 
@@ -425,4 +446,57 @@ Recuerda que esto solo funciona con versiones superiores a Java 10.
     • Void: palabra clave cuando una función no tiene un valor de regreso.
 #LLamar funciones
     int c= suma(5,7);
+# CREAR funciones
+       public static double sphereVolumen(double r){
+            return (4/3)*Math.PI * Math.pow(r,2);
+        }
+
+#static 
+    Una función static la vas a poder llamar directo dentro de 
+    la clase sin instanciarla, o fuera de la clase haciendo referencia 
+    a la clase y no a un objeto de ella, si no es estatic, para 
+    poder llamarlo deber ser por medio de la instancia de un objeto de esa clase, saludos
     
+    La cuestión es que en el ejemplo se
+    pusieron las funciones como métodos estáticos, 
+    para que pudieran ser utilizadas dentro del método main.
+     si no no sería posible
+    
+    //modificador de acceso static: es algo que aplica para metodos que comparten el metodo main, 
+    // para todo lo demas no es aplicatorio poner static y nuestro valor de regreso es double
+
+#JAVA DOCS
+    nos ayuda a comprender qué hace el código 
+    genera documentacion en html
+    declarar mi javadoc con documentacion 
+    /** */ 
+
+    /** 
+    * esta es la documentacion que si se va a leer de javadoc
+    *
+    * @param quantity Cantidad de dinero
+    * @param currency Tipo de moneda: solo acepta MXN o COP
+    * @return quantity Devuelve la cantidad actualizada en dolares
+    */
+    el ide lo tiene oculto
+    configuracion: editor->general->code completion->activa show the documentation popup in 1000ms 
+#tags de java docs
+
+#bucle do while 
+    Los bucles (ciclos) nos ayudan a ejecutar una parte de nuestro código una cantidad de veces hasta que se cumpla alguna condición y podamos continuar con la ejecución de nuestro código.
+    
+    Existen diferentes bucles. Por ejemplo, el bucle do while:
+    
+    do {
+      // instrucciones
+    } while (condición);
+    Los ciclos evaluarán si la condición se cumple y cuando deje de hacerlo no ejecutarán más el código del ciclo. Las instrucciones son las encargadas de que esta condición cambie de verdadero a falso. De otra forma, si las instrucciones nunca cambian la condición, el ciclo no se detendrá nunca, lo que conocemos como un ciclo infinito.
+    
+    La clase Scanner le permite a los usuarios contestar algunas preguntas para que nuestro programa actúe de una forma u otra. Para usarla solo debemos importar la clase Scanner de las APIs de desarrollo de Java:
+    
+    import java.util.Scanner;
+    
+    int response = 0;
+    
+    Scanner sc = new Scanner(System.in);
+    response = Integer.valueOf(sc.nextLine());

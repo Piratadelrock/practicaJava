@@ -41,5 +41,17 @@ public class MathematicOperations {
 
         //Devuelve el numero elevado a la potencia de un valor double
         System.out.println(Math.exp(i));
+
+        //area de un circulo
+        //pi*r2
+        System.out.println(Math.PI * Math.pow(j,2));
+
+        //area de una esfera
+        //4*pi*r2
+        System.out.println(4*Math.PI * Math.pow(j,2));
+        //volumen de una esfera
+        //4*pi*r2
+        System.out.println((4/3)*Math.PI * Math.pow(j,2));
+
     }
 }
