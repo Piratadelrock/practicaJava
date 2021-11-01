@@ -230,4 +230,199 @@ Recuerda que esto solo funciona con versiones superiores a Java 10.
     //volumen de una esfera
     //(4/3)*pi*r3
     (4/3)*Math.PI * Math.pow(y,2)
-# cast en variables estimacion y exactitud
+# cast manual en variables estimación y exactitud
+    un cast es un tipo de dato que esta siendo transformado a un tipo de dato distinto 
+      ejecutar un casting sera colocar (int) para trunca la parte decimal
+      
+    un double transformado a un int
+        int estimado = (int) variableAEstimar;
+    transformamos un dato grande a un dato pequeño se trunca la parte decimal
+     
+    //ESTIMACIÓN se trunca la parte decimal,
+         int estimatedMonthlyDogs = (int) monthlyDogs; //casteando a entero el decimal, de 2.5 que seria exacto
+         System.out.println(estimatedMonthlyDogs);// 2
+
+    //EXACTITUD
+        int a= 30;
+        int b= 12;
+        System.out.println((double) a/b); //2.5
+        
+# TABLA DE CONVERSION DE TIPOS DE DATOS QUE SE PUEDE TENER 
+    buscar la tabla 
+    mas o menos esta desde el mas pequeño al mas grande las flechas 
+    son 
+    conversion automatica( ) y requiere un cast ()
+    btye <------\   
+    short <------>char
+    int <-------/
+    long
+    float
+    double
+    
+    .::Conversión Automatica::.
+    byte -> short
+    short -> int
+    char -> int
+    int -> long
+    long -> float
+    float -> double
+    
+    .::Cast Necesario::.
+    double -> float
+    float -> long
+    long -> int
+    int -> short
+    short -> byte
+    
+    char <-> byte
+    char <-> short
+    int -> char
+
+#archivos JAR (Java Archive) .jar
+    los .class es el resultado de la compilacion del codigo fuente
+    
+    son archivos de Java con el código compilado de los archivos (*.class)  
+    y comprimido con el formato ZIP para que más adelante sean interpretados 
+    y ejecutados por la máquina virtual de Java (JVM).
+    
+    Para generar estos archivos podemos entrar a
+      File > Project Structure > Artifacts y seleccionar la opción de JAR > From modules with dependencies. 
+    Luego de esto podemos compilar nuestro proyecto desde 
+      Build > Build Artifacts > Build 
+    y podremos nuestros archivos ejecutables en la carpeta 
+      out/artifacts/.
+        
+    ejecutar el archivo jar
+        java -jar HolaMundo.Java.jar
+ 
+# practica 
+    Variables
+    Ejercicio 1.
+    Ponte creativo y preséntanos a tu familia con variables, utiliza todos los tipos y cantidad de variables que puedas, no olvides las convenciones de nombres Camel Case.
+    
+    Casting
+    Ejercicio 2
+    
+    Usando los dos tipos de casting que aprendiste (implícito y explícito), resuelve los siguientes casteos indicando qué tipo es y si se está calculando estimación o exactitud.
+    
+    char c = ‘z’; conviertelo a int
+    int i = 250; conviertelo a long y luego de long a short
+    double d = 301.067; conviertelo a long
+    int i = 100; súmale 5000.66 y conviertelo a float
+    int i = 737; multiplícalo por 100 y conviertelo a byte
+    double d = 298.638; divídelo entre 25 y conviertelo a long
+    
+    Archivos JAR
+    Ejercicio 3
+    
+    Explica cómo distribuirías y crearías un ambiente de producción para un programa compilado con la versión 9 de Java.
+    Incluye al menos dos Sistemas Operativos.
+    
+# alcance / scope de la variable 
+    {Scope}
+    la variable se declara antes de usarse
+    la segunda es que este declarada dentro del scope, 
+    que limita el uso de la variable
+    si quisieramos ampliar su alcance deberiamos ponerla al mismo nivel 
+    donde se declara las variables antes del scope
+    
+# expresiones boleanas
+    operadores especiales, true o false
+    operadores de equidad 
+        igualdad a==b
+        desigualdad a!=b
+    operadores relacionales 
+        <,>,<=,>= tambien devuelven verdadero o falso
+    operadores logicos 
+        && AND, || OR, ! NOT
+
+    Por ejemplo:
+    
+    boolean condicionA = true; // verdadero
+    boolean condicionB = false; // falso
+    
+    boolean condicionC = 2 + 2 == 4; // verdadero
+    boolean condicionD = 2 + 2 == 5; // falso
+    
+    boolean condicionE = "Pepito" == "Pepito"; // verdadero
+    boolean condicionF = "Pepito" == "Pepe"; // falso
+    Para esto debemos usar los operadores lógicos:
+    
+    Operadores de equidad:
+    
+    Igualdad: ==
+    Desigualdad: !=
+    Operadores Relacionales:
+    
+    Menor que: <
+    Mayor que: >
+    Menor o igual que: <=
+    Mayor o igual que: >=
+    Operadores lógicos:
+    
+    &&: AND (evaluar si dos o más condiciones son verdaderas).
+    ||: OR (evaluar si al menos una de las condiciones es verdadera).
+    !: NOT (evaluar que la condición NO sea verdadera).
+    Recuerda que además de las sentencias IF y ELSE, también podemos usarELSE IF. Esta la usamos cuando queremos evaluar alguna condición diferente a la condición delIF` pero no exactamente al revés.
+    
+    Por ejemplo:
+    
+    if (noHayInternet) {
+      System.out.println("No hay Internet");
+    } else if (hayInternetPeroMuyPoquito) {
+      System.out.println("Tienes muy poquito Internet");
+    } else if (hayBuenInternetPeroNoEsSuficiente) {
+      System.out.println("Casi casi, falta solo un poquito más");
+    } else {
+      System.out.println("¡Tienes suficiente Internet!");
+    }
+ # switch 
+    SWITCH solo admite los tipos de datos:
+    
+    byte y Byte
+    short y Short
+    int y Integer
+    char y Character
+    String
+    enum
+    No admite:
+    
+    boolean y Boolean
+    long y Long
+    float y Float
+    double y Double
+    switch (colorModeSelected){
+        case "Light":
+            System.out.println("Seleccionaste Light Mode");
+            break;
+        case "Blue Dark":
+            System.out.println("Seleccionaste Blue Dark Mode");
+            break;
+        case "Dark":
+            System.out.println("Seleccionaste Dark");
+            break:
+        default:
+            System.out.println("Selecciona una opcion");
+    }
+    
+ #funciones 
+    entregamos dato -> realiza proceso-> sale resultado
+    organizar y modularizar el código 
+    reutilizar codigo 
+    evitar código repetido
+    una funcion puede verse asi:
+        public int suma(int a, int b){
+            return a+b;
+        }
+    es importante devolver el con el tipo de dato que se va a obtener,
+    sera mucho mejor para testear
+   
+    la firma de la funcion es la primer linea public int funcion,
+    recordar que deban ser unicos y apegados a low 
+
+    Funciones: nos ayudan a organizar, modularizar y evitar el código repetido.
+    • Return: palabra clave cuando una función tiene un valor de regreso.
+    • Void: palabra clave cuando una función no tiene un valor de regreso.
+#LLamar funciones
+    int c= suma(5,7);
+    
