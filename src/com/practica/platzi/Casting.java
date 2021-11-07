@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class Casting {
     public static void main(String[] args) {
         //En un año ubicar 30 perritos

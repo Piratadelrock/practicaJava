@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class IncrementDecrement {
     public static void main(String[] args) {
         //imaginando el juego de mario bross puede ganar o perder vidas

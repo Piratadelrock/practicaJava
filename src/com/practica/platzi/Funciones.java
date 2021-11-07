@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class Funciones {
     public static void main(String[] args) {
         double y=3;

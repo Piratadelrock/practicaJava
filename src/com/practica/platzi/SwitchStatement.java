@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class SwitchStatement {
     public static void main(String[] args) {
         String colorModeSelected = "Dark";

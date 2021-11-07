@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class variables {
     public static void main(String[] args) {
         //declarando una variable siempre inicializar por buenas practicas

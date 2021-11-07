@@ -1,4 +1,6 @@
-             //Upper Camel Case el nombre de clase debe ser identico al nombre del archivo
+package com.practica.platzi;
+
+//Upper Camel Case el nombre de clase debe ser identico al nombre del archivo
 public class NamingJava {
     public static void main(String[] args) {
         int celphone = 331313;

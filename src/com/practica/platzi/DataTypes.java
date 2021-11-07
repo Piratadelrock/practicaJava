@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class DataTypes {
     public static void main(String[] args) {
         long n= 12345678901L;

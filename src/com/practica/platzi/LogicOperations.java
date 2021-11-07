@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class LogicOperations {
     public static void main(String[] args) {
         int a = 8;

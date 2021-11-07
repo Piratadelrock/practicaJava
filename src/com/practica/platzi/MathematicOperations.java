@@ -1,3 +1,5 @@
+package com.practica.platzi;
+
 public class MathematicOperations {
     public static void main(String[] args) {
         //si queremos manejar mas precision para datos, puntos flotantes
