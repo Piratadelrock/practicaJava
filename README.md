@@ -1,42 +1,25 @@
 # Practica Java 
- *casi cualquier cosa que pudiera decir es honesta y haría más daño que bien -James Gosling*
+ *casi cualquier cosa que pudiera decir es honesta y haría más daño que bien. -James Gosling*
 
     estudia de java SE -> java EE
 # JAVA:
     java es un lenguaje de alto nivel 
-    verde alto nivel: java javascript ruby python 
-    amarillo scala, java
-    naranja medio c++
+    
+    verde alto nivel: java, javascript, ruby, python 
+    amarillo: scala, java
+    naranja medio: c++
     rojo y naranja entre bajo y medio: c
-    rojo bajo nivel : machine code assembly 
+    rojo bajo nivel: machine, code, assembly 
     
-    * primer nivel: 
+   * primer nivel: 
         java SE special edition aplicaciones de escritorio, modo consola.
-    
         desde el java SE 6 se inicio para los proyectos de los desarrolladores
-    * segundo nivel: 
+        
+   * segundo nivel: 
         java EE enterprise su lugar esta en web, servidores, apps mejor distribuidas
     
-    WORA
-        Write Once 
-        Run Anywhere 
-    
-#CLASES / HERRAMIENTAS
-    una clase que se llama scanner 
-    una clase es una herramienta que agrupa una funcionalidad
-    le añadiremos al programa import
-    usaremos el operador punto para leer de la consola un numero entero
-    para luego poder en el programa duplicar que permite llamar el nextInt() 
-    y que me lea un dato de la consola 
-    
-    *Configurar el scanner una herramienta 
-    inicializa          entrada de datos 
-    new        Scanner System.in
-    comandos: para leer se llama a Scanner, mas su importacion se hara 
-    automaticamente         
-         Scanner sc = new Scanner(System.in);
-         int nota = sc.nextInt();
-             
+ * WORA: Write Once Run Anywhere 
+                 
 # JAVA DEVELOPMENT KIT JDK 
      * Java runtime environment JRE 
         es la maquina virtual de java, que hace serla multiplataforma, tambien contiene algunas librerias 
@@ -76,7 +59,22 @@
 
 # comandos JAVA  
   	 //sout : System.out.println("Hola mundo");
-
+  	 
+#CLASES / HERRAMIENTAS
+    una clase que se llama scanner 
+    una clase es una herramienta que agrupa una funcionalidad
+    le añadiremos al programa import
+    usaremos el operador punto para leer de la consola un numero entero
+    para luego poder en el programa duplicar que permite llamar el nextInt() 
+    y que me lea un dato de la consola 
+    
+    *Configurar el scanner una herramienta 
+    inicializa          entrada de datos 
+    new        Scanner System.in
+    comandos: para leer se llama a Scanner, mas su importacion se hara 
+    automaticamente         
+         Scanner sc = new Scanner(System.in);
+         int nota = sc.nextInt();
     
 # QUE PASA CUANDO SE EJECUTA UN PROGRAMA JAVA
 # primera fase: archivos .java
@@ -133,15 +131,18 @@
     para salir 
         /ex
     tambien podemos usar sysdm.cpl desde ejecutar o cmd para abrir 
-    las com.practica.platzi.variables de entorno y cofigurar los paths que queremos
+    las com.practica.platzi.variables de entorno y cofigurar los 
+    paths que queremos
      
      Ejercicio 2.
      Asegurate de tener definida una versión superior a la 8.
-     Ahora desde tu terminal escribe el siguiente comando para abrir nuestra jshell
+     Ahora desde tu terminal escribe el siguiente comando 
+     para abrir nuestra jshell
      
      $jshell 
      Screen Shot 2019-07-24 at 5.04.52 PM.png
-     Ahora escribe la línea de código para imprimir un texto (no olvides poner ; y dar enter).
+     Ahora escribe la línea de código para imprimir 
+     un texto (no olvides poner ; y dar enter).
  
  # com.practica.curso.variables en java
     tipoDeDato nombreVariable;
@@ -222,6 +223,7 @@
         
         System.out.println("Regalo: " + regalo + ", vidas: " + vidas);
         // Regalo: 106, vidas: 6
+        
 # operaciones lado cientifico, clase math 
     la clase math tiene muchos otros metodos
     //devuelve un entero redondeo hacia arriba
@@ -265,9 +267,11 @@
         // Volumen de una esfera ( (4/3) * PI * r^3):
                 (4/3) * Math.PI * Math.pow(r, 3)
                 
-# cast manual en com.practica.curso.variables estimación y exactitud
-    un cast es un tipo de dato que esta siendo transformado a un tipo de dato distinto 
-      ejecutar un casting sera colocar (int) para trunca la parte decimal
+# CAST manual en com.practica.curso.variables 
+#estimación y exactitud
+    un cast es un tipo de dato que esta siendo transformado a un tipo 
+    de dato distinto ejecutar un casting sera colocar (int)
+    para truncar la parte decimal
       
     un double transformado a un int
         int estimado = (int) variableAEstimar;
@@ -422,21 +426,20 @@
     } else {
       System.out.println("¡Tienes suficiente Internet!");
     }
- # switch 
-    SWITCH solo admite los tipos de datos:
-    
-    byte y Byte
-    short y Short
-    int y Integer
-    char y Character
-    String
-    enum
+ # SWITCH 
+    admite los tipos de datos:
+        byte y Byte
+        short y Short
+        int y Integer
+        char y Character
+        String
+        enum
+        
     No admite:
-    
-    boolean y Boolean
-    long y Long
-    float y Float
-    double y Double
+        boolean y Boolean
+        long y Long
+        float y Float
+        double y Double
     switch (colorModeSelected){
         case "Light":
             System.out.println("Seleccionaste Light Mode");
@@ -450,7 +453,47 @@
         default:
             System.out.println("Selecciona una opcion");
     }
+# break continue y return 
+    Antes de pasar a uno de nuestros temas más importantes del curso
+    es importante que sepas todas las opciones que tienes para
+     detener ciclos y así seguir controlando 
+     el flujo de tus programas.
     
+    Break
+    En Java esta sentencia la verás en dos situaciones especificamente:
+    
+    En un Switch: en esta situación break hace que el flujo del switch 
+    no continúe ejecutándose a la siguiente comparación,
+    esto con el objetivo de que solo se cumpla una sola condición:
+    switch (colorModeSelected){
+        case "Light":
+                    System.out.println("Seleccionaste Light Mode");
+                    break;
+            case "Night": //Ambar
+                    System.out.println("Seleccionaste Night Mode");
+                    break;
+            case "Blue Dark":
+                    System.out.println("Seleccionaste Blue Dark Mode");
+                    break;
+    }
+    Para salir de un bucle: Como acabamos de ver un break es capaz 
+    de detener el flujo en el código, en este caso detendremos 
+    el ciclo como tal terminándolo y haciendo que saltemos
+    a la siguiente instrucción después del ciclo.
+    
+    Continue
+    Continue en cierto modo también nos va a servir para 
+    detener un ciclo pero en lugar de terminarlo como en 
+    el caso de break, este volverá directo a la condición.
+    
+    Return
+    Aunque en algunos lenguajes esta sentencia sirve como 
+    un tipo goto, dónde se rompe el flujo del programa la
+     mejor forma de usarlo en Java es 
+     en com.practica.curso.Funciones, cuando lo usamos aquí 
+     siempre viene acompañado de un valor, el cuál indica el 
+     dato que se estará devolviendo en la función.    
+     
  #FUNCIONES 
     entregamos dato -> realiza proceso-> sale resultado
     organizar y modularizar el código 
@@ -476,7 +519,15 @@
             return (4/3)*Math.PI * Math.pow(r,2);
         }
 
-#static 
+#static void
+
+    static: Indica que no es necesario crear una instancia de la clase
+    para acceder al método. 
+    Corresponde a la clase en general, mas no a una intancia. 
+   
+    void: Indica el tipo de objeto que regresa la función. 
+    En este caso la función no regresa ningún valor, por eso es void.
+    
     Una función static la vas a poder llamar directo dentro de 
     la clase sin instanciarla, o fuera de la clase haciendo referencia 
     a la clase y no a un objeto de ella, si no es estatic, para 
@@ -568,46 +619,7 @@
     	}
     	System.out.print("\n");
     }
-# break continue y return 
-    Antes de pasar a uno de nuestros temas más importantes del curso
-    es importante que sepas todas las opciones que tienes para
-     detener ciclos y así seguir controlando 
-     el flujo de tus programas.
-    
-    Break
-    En Java esta sentencia la verás en dos situaciones especificamente:
-    
-    En un Switch: en esta situación break hace que el flujo del switch 
-    no continúe ejecutándose a la siguiente comparación,
-    esto con el objetivo de que solo se cumpla una sola condición:
-    switch (colorModeSelected){
-        case "Light":
-                    System.out.println("Seleccionaste Light Mode");
-                    break;
-            case "Night": //Ambar
-                    System.out.println("Seleccionaste Night Mode");
-                    break;
-            case "Blue Dark":
-                    System.out.println("Seleccionaste Blue Dark Mode");
-                    break;
-    }
-    Para salir de un bucle: Como acabamos de ver un break es capaz 
-    de detener el flujo en el código, en este caso detendremos 
-    el ciclo como tal terminándolo y haciendo que saltemos
-    a la siguiente instrucción después del ciclo.
-    
-    Continue
-    Continue en cierto modo también nos va a servir para 
-    detener un ciclo pero en lugar de terminarlo como en 
-    el caso de break, este volverá directo a la condición.
-    
-    Return
-    Aunque en algunos lenguajes esta sentencia sirve como 
-    un tipo goto, dónde se rompe el flujo del programa la
-     mejor forma de usarlo en Java es 
-     en com.practica.curso.Funciones, cuando lo usamos aquí 
-     siempre viene acompañado de un valor, el cuál indica el 
-     dato que se estará devolviendo en la función.
+
 # arrays 
     Los arreglos o arrays son objetos en los que podemos guardar más de una variable, una lista de elementos. Los arrays son de una sola dimensión, pero si guardamos arrays dentro de otros arrays podemos obtener arrays multidimensionales.
     

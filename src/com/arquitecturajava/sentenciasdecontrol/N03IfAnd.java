@@ -2,7 +2,7 @@ package com.arquitecturajava.sentenciasdecontrol;
 
 import java.util.Scanner;
 
-public class TercerIfAnd {
+public class N03IfAnd {
     public static void main(String[] args) {
         System.out.print("Ingresa la nota: ");
         Scanner sn=new Scanner(System.in);

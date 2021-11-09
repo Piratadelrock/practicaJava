@@ -2,7 +2,7 @@ package com.arquitecturajava.sentenciasdecontrol;
 
 import java.util.Scanner;
 
-public class PrimerIfStatement {
+public class N01IfStatement {
     public static void main(String[] args) {
         //falso o verdadero
         boolean cierto = false;

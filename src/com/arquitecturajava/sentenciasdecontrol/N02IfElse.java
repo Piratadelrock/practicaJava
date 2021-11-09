@@ -2,7 +2,7 @@ package com.arquitecturajava.sentenciasdecontrol;
 
 import java.util.Scanner;
 
-public class SegundoIfElse {
+public class N02IfElse {
     public static void main(String[] args) {
 
         //para leer por pantalla la nota
