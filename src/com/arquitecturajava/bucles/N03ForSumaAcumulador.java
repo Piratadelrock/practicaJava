@@ -2,7 +2,7 @@ package com.arquitecturajava.bucles;
 
 public class N03ForSumaAcumulador {
     public static void main(String[] args) {
-        //2x1=2
+        // la suma de los primeros 10 numeros
         System.out.println("Suma de los 10 primeros numeros");
         int suma = 0;
 
