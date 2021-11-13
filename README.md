@@ -1,8 +1,11 @@
-# Practica Java 
- *casi cualquier cosa que pudiera decir es honesta y haría más daño que bien. -James Gosling*
+# DOCUMENTACION JAVA PERSONAL
+    * ACTUALIZACION : 12/11/2021 
+ *Casi cualquier cosa que pudiera decir es honesta y haría más daño que bien. -James Gosling*
 
-    estudia de java SE -> java EE
+
+ 
 # JAVA:
+    Estudia de java SE -> java EE
     java es un lenguaje de alto nivel 
     
     verde alto nivel: java, javascript, ruby, python 
@@ -493,7 +496,7 @@
      en com.practica.curso.Funciones, cuando lo usamos aquí 
      siempre viene acompañado de un valor, el cuál indica el 
      dato que se estará devolviendo en la función.    
-     
+
  #FUNCIONES 
     entregamos dato -> realiza proceso-> sale resultado
     organizar y modularizar el código 
@@ -561,7 +564,96 @@
     configuracion: editor->general->code completion->activa show the documentation popup in 1000ms 
 #tags de java docs
 
-#bucle do while 
+ # BUCLES O CICLOS
+   * IF
+   * FOR 
+   * FOR INVERSO
+   * WHILE
+   * DO WHILE
+   * ANIDAMIENTOS Y BUCLES
+ 
+ #Bucle: if e if anidado
+     if(nota>5){
+         System.out.println("comprar movil");
+         if(oferta){
+             System.out.print("auriculares");
+         }
+     }
+# Bucle: for y for Anidados
+    * Estructura for:
+        for (inicialización; condición; incremento/decremento) {
+            // Instrucciones
+        }
+        
+    El Ciclo For nos ayuda a ejecutar
+    una parte de nuestro código las veces que
+    sean necesarias para que se cumpla una condición.
+    De hecho, el ciclo FOR nos da muchas ayudas para
+    lograr este resultado de la forma más fácil posible:
+    
+    // En este ejemplo el mensaje de printSOS se
+    // ejecutará 10 veces:
+    for (int i = 1; i <= 10; i++) {
+      printSOS();
+    }
+    ___
+   
+    *Estructura for anidado:
+      for(int i = 5; i >= 0; i--){
+         	for(int j = 0; j <= i; j++){
+         		System.out.print("*");
+         	}
+         	System.out.print("\n");
+         }
+         
+     Los ciclos FOR nos ayudan a ejecutar una parte de nuestro
+      código todas las veces que sean necesarias hasta que una
+       condición se cumpla, por ejemplo, que un número supere 
+       o iguale cierta cantidad.
+     
+     Eso es exactamente lo que necesitamos para trabajar 
+     con índices. En vez de escribir todos los números a mano,
+      vamos a utilizar un ciclo para imprimir el valor de cada
+       posición de nuestros arreglos, incluso si estos son 
+       multidimensionales:
+     
+     // Array de una sola dimensión:
+     for (int i = 0; i <= 3; i++) {
+       System.out.println(i);
+     }
+     // El resultado será: 0, 1, 2, 3
+     
+     // Array de dos dimensiones:
+     for (int row = 0; row < cities.length; row++) {
+       for (int col = 0; col < cities[row].length; col++) {
+         System.out.println(cities[row][col]);
+       }
+     }
+     // El resultado será:
+     // Colombia
+     // Bogotá
+     // México
+     // Guadalajara
+     // España
+     // Madrid
+     El ciclo FOREACH también nos ayuda a recorrer los elementos
+      de un array posición por posición, solo que no tenemos 
+      control sobre el índice, el ciclo se encarga de recorrer
+       todo el array automáticamente:
+     
+     for (TipoDato elemento : coleccion) {
+       // Instrucciones
+     }
+     
+     
+# BUCLES INVERSOS o decremento 
+ #for inverso 
+    se ejecuta al revez,
+        inicio   fin   incremento/vueltas   
+    for(int i=10;i>0;i=i-1){
+    }
+    
+#Bucle: do while 
     Los bucles (ciclos) nos ayudan a ejecutar una parte de nuestro código una cantidad de veces hasta que se cumpla alguna condición y podamos continuar con la ejecución de nuestro código.
     
     Existen diferentes bucles. Por ejemplo, el bucle do while:
@@ -599,26 +691,6 @@
     } else {
       isTurnOnLight = true;  
     }
-# bucle for 
-    El Ciclo For también nos ayuda a ejecutar una parte de nuestro código las veces que sean necesarias para que se cumpla una condición. De hecho, el ciclo FOR nos da muchas ayudas para lograr este resultado de la forma más fácil posible:
-    
-    // Estructura:
-    for (inicialización; condición; incremento o decremento;) {
-      // Instrucciones
-    }
-    
-    // En este ejemplo el mensaje de printSOS se
-    // ejecutará 10 veces:
-    for (int i = 1; i <= 10; i++) {
-      printSOS();
-    }
-    ___
-    for(int i = 5; i >= 0; i--){
-    	for(int j = 0; j <= i; j++){
-    		System.out.print("*");
-    	}
-    	System.out.print("\n");
-    }
 
 # arrays 
     Los arreglos o arrays son objetos en los que podemos guardar más de una variable, una lista de elementos. Los arrays son de una sola dimensión, pero si guardamos arrays dentro de otros arrays podemos obtener arrays multidimensionales.
@@ -648,44 +720,7 @@
     
     nombreVariable[indice] = valor;
     Recuerda que puedes aprender muchas más sobre estructuras de datos en el Curso Básico de Algoritmos.
-# Ciclos 
-# For Anidados 
-    Los ciclos FOR nos ayudan a ejecutar una parte de nuestro código todas las veces que sean necesarias hasta que una condición se cumpla, por ejemplo, que un número supere o iguale cierta cantidad.
-    
-    Eso es exactamente lo que necesitamos para trabajar con índices. En vez de escribir todos los números a mano, vamos a utilizar un ciclo para imprimir el valor de cada posición de nuestros arreglos, incluso si estos son multidimensionales:
-    
-    // Array de una sola dimensión:
-    for (int i = 0; i <= 3; i++) {
-      System.out.println(i);
-    }
-    // El resultado será: 0, 1, 2, 3
-    
-    // Array de dos dimensiones:
-    for (int row = 0; row < cities.length; row++) {
-      for (int col = 0; col < cities[row].length; col++) {
-        System.out.println(cities[row][col]);
-      }
-    }
-    // El resultado será:
-    // Colombia
-    // Bogotá
-    // México
-    // Guadalajara
-    // España
-    // Madrid
-    El ciclo FOREACH también nos ayuda a recorrer los elementos de un array posición por posición, solo que no tenemos control sobre el índice, el ciclo se encarga de recorrer todo el array automáticamente:
-    
-    for (TipoDato elemento : coleccion) {
-      // Instrucciones
-    }
 
-# If Anidados 
-    if(nota>5){
-        System.out.println("comprar movil");
-        if(oferta){
-            System.out.print("auriculares");
-        }
-    }
        
  
  
