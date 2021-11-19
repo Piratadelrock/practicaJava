@@ -720,11 +720,7 @@
     
     nombreVariable[indice] = valor;
     Recuerda que puedes aprender muchas más sobre estructuras de datos en el Curso Básico de Algoritmos.
-
-       
- 
- 
- 
- 
  
 # CONTINUA PROGRAMACION ORIENTADO A OBJETOS 
+
+
