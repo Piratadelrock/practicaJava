@@ -20,7 +20,7 @@ public class NamingJava {
         int POSITION = -5;
         int MAX_WIDTH = 9999;
         final int MIN_WIDTH = 1;
-        // en java hay una keyword que sea literalmente una constante y nunca cambie su valor
+        //final: en java hay una keyword que sea literalmente una constante y nunca cambie su valor
 
         //Lower Camel Case
         String fullName = "Emmanuel José Lopera Rojo";

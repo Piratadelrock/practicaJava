@@ -346,7 +346,7 @@
       out/artifacts/.
         
     ejecutar el archivo jar
-        java -jar com.practica.platzi.HolaMundo.Java.jar
+        java -jar com.practica.platzi._MenuPrincipal.Java.jar
  
 # practica 
     Variables
