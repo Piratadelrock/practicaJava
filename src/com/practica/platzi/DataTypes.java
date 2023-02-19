@@ -20,7 +20,7 @@ public class DataTypes {
         System.out.println(totalSalary);
 
         var employeeName = "Emmanuel";
-        System.out.println("EMPLOYEE: "+ employeeName + " SALARY: "+ salary);
+        System.out.println("EMPLOYEE: "+ employeeName + " SALARY: " + totalSalary);
 
 
 
