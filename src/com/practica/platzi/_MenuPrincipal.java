@@ -5,15 +5,15 @@ public class _MenuPrincipal {
 
         String mensaje = "Modo de lectura: " +
                 "\n 1. Variables " +
-                "\n 2.updating variables " +
+                "\n 2. updating variables " +
                 "\n 3. NamingJava" +
                 "\n 4. DataTypes" +
-                "\n 5. " +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\n" +
+                "\n 5. IncrementDecrement Operadores Asignacion Incremento y Decremento " +
+                "\n 6. MathematicOperations" +
+                "\n 7. Casting" +
+                "\n 8. " +
+                "\n 9. " +
+                "\n 10. " +
                 "\n";
 
         System.out.println(mensaje);

@@ -11,10 +11,10 @@ public class MathematicOperations {
         double i = 2.1;
         double j = 3.5;
 
-        //Redondea hacia arriba
+        //Redondea hacia arriba - devuelve un entero hacia arriba 2.1 -> 3.0
         System.out.println(Math.ceil(i));
 
-        //Redondea hacia abajo
+        //Redondea hacia abajo - 2.1 -> 2.0
         System.out.println(Math.floor(j));
 
         //Devuelve el valor mayor

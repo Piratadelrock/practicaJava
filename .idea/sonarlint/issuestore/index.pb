@@ -1,0 +1,19 @@
+
+X
+(src/com/practica/platzi/DoWhileLoop.java,0\c\0ca8dd9bace8c5dc490dd9a8c562c03d14957aeb
+\
+,src/com/practica/platzi/SwitchStatement.java,0\9\09b1976f1ae146e22b73d779e4d2f905ae3f8949
+V
+&src/com/practica/platzi/SeñalSOS.java,7\e\7ecf7a38cb63011722f221b008438679ec0142fd
+W
+'src/com/practica/platzi/NamingJava.java,0\0\00e91b5ee893fc295ccc2661ca9325f821062a06
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+V
+&src/com/practica/platzi/Funciones.java,a\b\ab5cb45c4c793eac3333f7fb2d071d9dd65ef332
+\
+,src/com/practica/platzi/LogicOperations.java,0\2\026405cb2c8d41651799db83ce29fa8cf6bc578a
+?
+src/com/ca.java,c\a\ca21b2cf41062bdf2bf9494a942dcc35f58b3cde
+V
+&src/com/practica/platzi/variables.java,2\b\2b4c5deb5b8badce11e70e89904aaff78131acc2

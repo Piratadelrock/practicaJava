@@ -2,20 +2,32 @@ package com.practica.platzi;
 
 public class Casting {
     public static void main(String[] args) {
-        //En un año ubicar 30 perritos
-        // Cuántos perritos ubique al mesa
+
+        //En un año ubicar 30 perritos... Cuántos perritos ubique al mes?
 
         double monthlyDogs = 30.0/12.0;
         System.out.println(monthlyDogs);// 2.5
 
-        //ESTIMACIÓN se trunca la parte decimal,
+        /*
+         .0 para respetar el tipo de dato de double
+         la respuesta sale en 2.5 pero como es posible ubicar .5, esto no tiene sentido por lo que este tipo de casos
+         no interesa saber mucho la precision sino la estimacion.
+         por lo que
+        */
+
+        //cuando nosotros convertimos un tipo de dato que es bastante grande y lo convertimos a un tipo de dato mas pequeño lo que
+        // sucede es que se TRUNCA el numero decimal
+        //TRUNCAR es como eliminar
+
+        //ESTIMACIÓN
         int estimatedMonthlyDogs = (int) monthlyDogs; //casteando a entero el decimal, de 2.5 que seria exacto
         System.out.println(estimatedMonthlyDogs);// 2
+
 
         //EXACTITUD
         int a= 30;
         int b= 12;
-        System.out.println((double) a/b); //2.5 este casting es manual, transformandolo a double
+        System.out.println((double) a/b); //2.5 este casting es manual, transformandolo a double desde el int y asi podemos tomar toda la cantidad de decimales que acarrea
 
         //si hacemos la division de un numero entero sera un resultado de numero entero
         //si lo introducimos en un double el resultado del numero entero no hay error

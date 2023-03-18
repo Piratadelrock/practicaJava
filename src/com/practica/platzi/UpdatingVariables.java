@@ -11,9 +11,10 @@ public class UpdatingVariables {
         // pension: $50 pesos
         salary = salary - 50;
         System.out.println(salary);
+
         // hizo 2 horas extra $30 c/u
         // menos costos de Comida : $45
-        salary = salary +(2*30)-45;
+        salary = salary +(2*30) - 45;
         System.out.println(salary);
 
         //actualizando cadenas de texto
@@ -22,7 +23,7 @@ public class UpdatingVariables {
         System.out.println(employeeName);
 
         employeeName = "Emmanuel " + employeeName;
-        System.out.println("Tu nombre es: "+employeeName);
+        System.out.println("Tu nombre es: " + employeeName);
 
     }
 }

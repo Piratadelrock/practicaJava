@@ -2,20 +2,28 @@ package com.practica.platzi;
 
 public class IncrementDecrement {
     public static void main(String[] args) {
+
         //imaginando el juego de mario bross puede ganar o perder vidas
+        //count lifes
         int lives = 5;
-        //Postfija
+
+        //PostFija
         //imaginando que algo paso
         lives = lives - 1;
         System.out.println(lives);//4
-        lives--;
+
+        lives--; //Decremento
         System.out.println(lives);//3
+
         //agarro un hongo
-        lives++;
+
+        lives++; //incremento
         System.out.println(lives);//4
 
-        //postfija
+        //PreFija
         //gana un regalo por ganar una vida
+//        System.out.println(lives++);
+//        System.out.println(lives++);
         int gift = 100 + lives++; //postfijo no le damos la vida solo el regalo queda en 104
         System.out.println(gift); //104
         System.out.println(lives); //5
@@ -27,7 +35,7 @@ public class IncrementDecrement {
 
         //lives++ postfijo se accede primeramente al dato de la variable sin importar si esta incrementado o no
         //++lives prefijo se accede a la variable y la incrementa
-
+//        Postfijo este primero accede al dato y realiza la operación, en cambio prefijo obtiene el dato incrementado.
 
     }
 }
