@@ -1,4 +1,4 @@
-package com.practica.platzi;
+package com.platzi;
 
 public class SeñalSOS {
     // ... _ _ _ ... ella lo llamo WhileLoop

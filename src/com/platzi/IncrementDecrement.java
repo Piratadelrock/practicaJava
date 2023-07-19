@@ -1,4 +1,4 @@
-package com.practica.platzi;
+package com.platzi;
 
 public class IncrementDecrement {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.practica.platzi;
+package com.platzi;
 
 //Upper Camel Case el nombre de clase debe ser identico al nombre del archivo
 public class NamingJava {

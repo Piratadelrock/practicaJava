@@ -2,7 +2,7 @@ package com;
 import java.util.Scanner;
 
 public class ca {
-
+//complejidad de algoritmos
         public static void main(String[] args) {
             Scanner in = new Scanner(System.in);
             int casos = in.nextInt();

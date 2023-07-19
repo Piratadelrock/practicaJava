@@ -134,7 +134,7 @@
     para salir 
         /ex
     tambien podemos usar sysdm.cpl desde ejecutar o cmd para abrir 
-    las com.practica.platzi.variables de entorno y cofigurar los 
+    las variables de entorno y cofigurar los 
     paths que queremos
      
      Ejercicio 2.
@@ -163,8 +163,8 @@
         clases: Nombre de clase identico al archivo.
     // Lower Camel Case:la primer letra sera minúscula
     int soyUnNumeroInt = 10;
-        nombres de metodos,nombres de las com.practica.platzi.variables 
-# tipos de datos com.practica.platzi.DataTypes
+        nombres de metodos,nombres de las variables 
+# tipos de datos DataTypes
     btye: rango -128 a 127 (1 byte)
     short Rango -32,768 a 32,767 (2 bytes)
     int rango -2,147,483,648 a 2,147,483,647 (4 bytes) 
@@ -188,10 +188,10 @@
      debemos usar comillas simples en vez de comillas dobles.
      boolean: Son un tipo de dato lógico, solo aceptan los valores true y false.
      También ocupa 2 bytes y almacena únicamente 1 dígito.
-     Seguro te diste cuenta que siempre debemos escribir el tipo de dato de nuestras com.practica.platzi.variables antes de definir su nombre y valor.
+     Seguro te diste cuenta que siempre debemos escribir el tipo de dato de nuestras variables antes de definir su nombre y valor.
      Pero esto cambia a partir de Java 10:
      solo debemos escribir la palabra reservada var y
-     Java definirá el tipo de dato de nuestras com.practica.platzi.variables automáticamente:
+     Java definirá el tipo de dato de nuestras variables automáticamente:
      
      var salary = 1000; // INT
      //pension 3%
@@ -346,14 +346,14 @@
       out/artifacts/.
         
     ejecutar el archivo jar
-        java -jar com.practica.platzi._MenuPrincipal.Java.jar
+        java -jar _MenuPrincipal.Java.jar
  
 # practica 
     Variables
     Ejercicio 1.
-    Ponte creativo y preséntanos a tu familia con com.practica.platzi.variables, utiliza todos los tipos y cantidad de com.practica.platzi.variables que puedas, no olvides las convenciones de nombres Camel Case.
+    Ponte creativo y preséntanos a tu familia con variables, utiliza todos los tipos y cantidad de variables que puedas, no olvides las convenciones de nombres Camel Case.
     
-    com.practica.platzi.Casting
+    Casting
     Ejercicio 2
     
     Usando los dos tipos de casting que aprendiste (implícito y explícito), resuelve los siguientes casteos indicando qué tipo es y si se está calculando estimación o exactitud.
@@ -377,7 +377,7 @@
     la segunda es que este declarada dentro del scope, 
     que limita el uso de la variable
     si quisieramos ampliar su alcance deberiamos ponerla al mismo nivel 
-    donde se declara las com.practica.platzi.variables antes del scope
+    donde se declara las variables antes del scope
     
 # expresiones boleanas
     operadores especiales, true o false
@@ -512,7 +512,7 @@
     la firma de la funcion es la primer linea public int funcion,
     recordar que deban ser unicos y apegados a low 
 
-    com.practica.platzi.Funciones: nos ayudan a organizar, modularizar y evitar el código repetido.
+    Funciones: nos ayudan a organizar, modularizar y evitar el código repetido.
     • Return: palabra clave cuando una función tiene un valor de regreso.
     • Void: palabra clave cuando una función no tiene un valor de regreso.
 #LLamar funciones
@@ -709,12 +709,12 @@
     
     // Array de dos dimensiones:
     TipoDato[][] cities = new String[númeroFilas][númeroColumnas];
-    Ya que los arrays pueden guardar multiples elementos, la convención es escribir los nombres de las com.practica.platzi.variables en plural.
+    Ya que los arrays pueden guardar multiples elementos, la convención es escribir los nombres de las variables en plural.
     
 # declarando arreglos 
     
 # indices y busqueda de elementos en array 
-    Los índices son com.practica.platzi.variables simples que nos ayudan a identificar las posiciones en un arreglo. Estas com.practica.platzi.variables siempre guardan números, comienzan en 0 e incrementan de abajo a arriba y de izquierda a derecha a medida que guardamos más elementos en nuestros arrays.
+    Los índices son variables simples que nos ayudan a identificar las posiciones en un arreglo. Estas variables siempre guardan números, comienzan en 0 e incrementan de abajo a arriba y de izquierda a derecha a medida que guardamos más elementos en nuestros arrays.
     
     Para guardar un valor en alguna posición de nuestro array solo debemos usar el índice de la siguiente forma:
     

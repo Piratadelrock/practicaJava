@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="castingAlRevesJ11:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/castingAlRevesJ11_jar</output-path>
+    <root id="archive" name="introduccion java11.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../pooJava11/Television/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="java11" />
+      <element id="module-output" name="pooJava11" />
+      <element id="module-output" name="Banco" />
+      <element id="module-output" name="Television" />
+    </root>
+  </artifact>
+</component>

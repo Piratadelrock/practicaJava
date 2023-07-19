@@ -1,4 +1,4 @@
-package com.practica.platzi;
+package com.platzi;
 
 public class Casting {
     public static void main(String[] args) {
@@ -43,8 +43,9 @@ public class Casting {
         char n= '1';
         int nI = n;
         System.out.println(nI);//49
-        //caracter 49
+        //caracter 49  -> codigo ascii
 
+//        short nS = n; //char es mas grande que el short por lo que se debe ejecutar el casting explicito
         short nS = (short) n;
         System.out.println(nS); //49
     }

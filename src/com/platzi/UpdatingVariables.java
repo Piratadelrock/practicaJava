@@ -1,4 +1,4 @@
-package com.practica.platzi;
+package com.platzi;
 
 public class UpdatingVariables {
     public static void main(String[] args) {

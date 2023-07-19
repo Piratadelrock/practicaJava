@@ -1,4 +1,4 @@
-package com.practica.platzi;
+package com.platzi;
 
 import java.util.Scanner;
 
