@@ -2,6 +2,7 @@ package com.platzi;
 
 public class IfStatement {
     public static void main(String[] args) {
+
         boolean isBluetoothEnabled = false;
         int fileSended = 3;
 
