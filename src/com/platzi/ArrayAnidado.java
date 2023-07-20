@@ -1,6 +1,6 @@
 package com.platzi;
 
-public class Arrays {
+public class ArrayAnidado {
     public static void main(String[] args) {
         //declaracion de 17 espacios PARA SIEMPRE
         String[] androidVersions = new String[17];
@@ -29,9 +29,14 @@ public class Arrays {
         androidVersions[1] = "Bannana Bread";
         androidVersions[2] = "Cupcake";
         androidVersions[3] = "Donut";
+                             //17 sin embargo se dice que los indices son n-1 por lo que deberiamos restarle -1 o dejarlo solo < y no <=
+        for (int i = 0; i < androidVersions.length; i++) {
+            String version = androidVersions[i];
+            if(version != null){
+                System.out.println(version);
+            }
+        }
 
-        System.out.println(androidVersions[0]);
-        System.out.println(androidVersions[1]);
 
         // especie de coordenadas
         cities[0][0] = "Colombia";
@@ -41,13 +46,23 @@ public class Arrays {
         cities[1][0] = "Estados Unidos";
         cities[1][1] = "Nueva York";
 
+//        cities.length la numeracion que genera los renglones
+        System.out.println("tamaño de filas" + cities.length);
+        System.out.println("tamaño de las columnas en la fila seleccionada "+cities[0].length);
+
+        for (int i = 0; i < cities.length; i++) {
+
+            for (int j = 0; j < cities[i].length; j++) {
+                System.out.println(cities[i][j]);
+            }
+        }
 
         System.out.println(
                 "         * +-------------------+------------------+\n" +
-                "         * |     País          |      Ciudad      |\n" +
-                "         * +-------------------+------------------+\n" +
-                "         * /    "+(cities[0][0]+"       :    "+cities[0][1])+"      / \n"+
-                "         * +-------------------+------------------+"
+                        "         * |     País          |      Ciudad      |\n" +
+                        "         * +-------------------+------------------+\n" +
+                        "         * /    "+(cities[0][0]+"       :    "+cities[0][1])+"      / \n"+
+                        "         * +-------------------+------------------+"
 
         );
 
