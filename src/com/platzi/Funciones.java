@@ -3,6 +3,7 @@ package com.platzi;
 public class Funciones {
     public static void main(String[] args) {
         double y=3;
+
         //area de un circulo
         //pi*r2
         double area = circleArea(y);
@@ -17,6 +18,8 @@ public class Funciones {
 
         //moneda convertida a dolar
         System.out.println("Pesos a dolares: " + convertToDollar(1000, "COP"));
+
+        convertToDollar(1000,"COP");
     }
 
     public static double circleArea(double r){
@@ -30,11 +33,29 @@ public class Funciones {
     }
 
     /**
+     * @Author piratadelrock
      * Descripción: Funcion que especificando su moneda comvierte una cantidad de dinero a dolares
      *
+
      * @param quantity Cantidad de dinero
      * @param currency Tipo de moneda: solo acepta MXN o COP
      * @return quantity Devuelve la cantidad actualizada en dolares
+     *
+     * @<code> case "MXN":
+     *                  quantity = quantity * 0.052;
+     *                  break;
+     *
+     *      </code>
+     * @code {      //MXN COP
+     *         switch (currency) {
+     *             case "MXN":
+     *                 quantity = quantity * 0.052;
+     *                 break;
+     *             case "COP":
+     *                 quantity = quantity * 0.00031;
+     *                 break;
+     *         }
+     *         return quantity; }2
      */
     public static double convertToDollar(double quantity, String currency){
         //MXN COP

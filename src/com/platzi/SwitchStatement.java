@@ -14,8 +14,16 @@ public class SwitchStatement {
             case "Dark":
                 System.out.println("Seleccionaste Dark");
                 break;
+            case "Night": //Ambar
+                System.out.println("Seleccionaste Dark");
+                break;
             default:
                 System.out.println("Selecciona una opcion");
         }
+
+
+        //switch spoiler a partir de java 12
+
+
     }
 }
